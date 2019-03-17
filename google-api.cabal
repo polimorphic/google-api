@@ -1,0 +1,15 @@
+name:                google-api
+version:             0.0.0.0
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  ghc-options:         -O2 -Wall
+  default-language:    Haskell2010
+  build-depends:       aeson >=1.2.4 && <1.4
+                     , base >=4.9.0 && <4.10
+                     , http-client-tls >=0.3.5 && <0.4
+                     , servant >=0.13 && <0.15
+                     , servant-client >=0.13 && <0.15
+  exposed-modules:     Network.Google.OAuth2
